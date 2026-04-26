@@ -124,28 +124,31 @@ Top Matches:
 Bhavesh Nehete
 Aspiring Data Scientist | AI/ML Enthusiast
 
----
 ## 🧩 Architecture Diagram
 
 ```mermaid
 flowchart TD
 
-    A[Patient Data<br/>(Synthea + Synthetic + PMC)] --> B[Data Cleaning & Standardization]
-    C[Clinical Trials<br/>(ClinicalTrials.gov)] --> B
+    A[Patient Data - Synthea Synthetic PMC] --> B[Data Cleaning and Standardization]
+    C[Clinical Trials - ClinicalTrials.gov] --> B
 
-    B --> D[Feature Engineering<br/>(Structured Patient Profiles)]
+    B --> D[Feature Engineering - Patient Profiles]
     
-    D --> E[Text Embedding<br/>(Sentence Transformers)]
+    D --> E[Text Embedding - Sentence Transformers]
     
-    E --> F[Vector Database<br/>(FAISS Index)]
+    E --> F[Vector Database - FAISS Index]
 
-    F --> G[Top-K Retrieval<br/>(Cosine Similarity)]
+    F --> G[Top K Retrieval - Cosine Similarity]
 
-    G --> H[Rule-Based Filtering<br/>(Age, Gender, Condition)]
+    G --> H[Rule Based Filtering - Age Gender Condition]
 
-    H --> I[Scoring & Ranking Layer]
+    H --> I[Scoring and Ranking Layer]
 
-    I --> J[LLM Reasoning<br/>(FLAN-T5 Local Model)]
+    I --> J[LLM Reasoning - FLAN T5]
 
-    J --> K[Final Output<br/>Ranked Clinical Trials + Explanation]
+    J --> K[Final Output - Ranked Trials with Explanation]
+```
+
+
+---
 ```
