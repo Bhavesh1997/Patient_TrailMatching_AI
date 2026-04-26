@@ -1,0 +1,46 @@
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Virtual environments and local env files
+.venv/
+venv/
+env/
+ENV/
+.env
+.env.*
+
+# Editor and OS files
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Test and build artifacts
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+dist/
+build/
+
+# Local compiled output inside notebooks
+Notebooks/__pycache__/
+
+# Generated matching and cleaning outputs
+Data/processed/
+
+# Generated synthetic patient exports
+Data/synthea/augmented_oncology_patients.csv
+Data/synthea/oncology_patients.csv
+Data/synthea/synthetic_trial_matching_patients.csv
+
+# Large compressed raw export
+Data/synthea/*.zip
+
+# Java/Gradle build artifacts from embedded Synthea source
+synthea/.gradle/
+synthea/build/
+synthea/out/
